@@ -1,0 +1,378 @@
+/* ================= BODY ================= */
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#f4f6f9;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+background:linear-gradient(90deg,#081c45,#1e3a8a);
+padding:22px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-sizing:border-box;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:28px;
+font-size:20px;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#ffd700;
+}
+
+/* ================= HERO ================= */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(8,28,69,0.55),rgba(30,58,138,0.45)),
+url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content{
+max-width:900px;
+margin-top:60px;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:bold;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.hero p{
+font-size:34px;
+line-height:1.5;
+margin-bottom:35px;
+}
+
+/* ================= HERO BUTTONS ================= */
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.hero-btn{
+padding:18px 38px;
+border-radius:10px;
+text-decoration:none;
+font-size:24px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn1{
+background:#ffd700;
+color:black;
+}
+
+.btn2{
+border:2px solid white;
+color:white;
+background:transparent;
+}
+
+.hero-btn:hover{
+transform:translateY(-5px);
+}
+
+/* ================= STATS ================= */
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+padding:60px 20px;
+background:white;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:48px;
+color:#1e3a8a;
+margin:0;
+}
+
+.stat p{
+font-size:20px;
+}
+
+/* ================= CARDS ================= */
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px 30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:30px;
+width:300px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+font-size:28px;
+color:#1e3a8a;
+}
+
+.card p{
+font-size:18px;
+line-height:1.5;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:12px 24px;
+background:#1e3a8a;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+/* ================= SECTION ================= */
+.section{
+width:85%;
+margin:40px auto;
+background:white;
+padding:35px;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,0.12);
+}
+
+.section h2{
+color:#1e3a8a;
+font-size:38px;
+}
+/* ================= TABLE STYLING ================= */
+.summary-table{
+width:100%;
+border-collapse:collapse;
+margin-top:25px;
+margin-bottom:40px;
+background:white;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border-radius:10px;
+overflow:hidden;
+}
+
+.summary-table th{
+background:#1e3a8a;
+color:white;
+padding:14px;
+text-align:center;
+font-size:16px;
+}
+
+.summary-table td{
+padding:14px;
+text-align:center;
+border:1px solid #ddd;
+font-size:15px;
+}
+
+.summary-table tr:nth-child(even){
+background:#f8fbff;
+}
+
+.summary-table tr:hover{
+background:#eef4ff;
+}
+/* ================= FAQ HERO ================= */
+.faq-hero{
+height:300px;
+background:
+linear-gradient(rgba(8,28,69,0.65),rgba(30,58,138,0.55)),
+url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+margin-top:80px;
+}
+
+.faq-hero h1{
+font-size:68px;
+margin-bottom:15px;
+}
+
+.faq-hero p{
+font-size:22px;
+}
+
+/* ================= FAQ BOX ================= */
+.faq-box{
+background:white;
+padding:28px;
+margin-bottom:25px;
+border-left:6px solid #1e3a8a;
+border-radius:12px;
+box-shadow:0 6px 14px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.faq-box:hover{
+transform:translateY(-5px);
+}
+
+.faq-box h3{
+color:#1e3a8a;
+font-size:26px;
+margin-bottom:12px;
+}
+
+.faq-box p{
+font-size:18px;
+line-height:1.7;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+.faq-hero h1{
+font-size:40px;
+}
+
+.faq-hero p{
+font-size:18px;
+}
+
+.faq-box h3{
+font-size:22px;
+}
+
+.faq-box p{
+font-size:16px;
+}
+
+}
+
+/* ================= SUMMARY BOX ================= */
+.summary-box{
+background:#f8fbff;
+padding:25px;
+border-left:6px solid #1e3a8a;
+border-radius:10px;
+margin-top:30px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.summary-box h3{
+color:#1e3a8a;
+margin-bottom:15px;
+}
+
+.summary-box ul{
+padding-left:22px;
+line-height:2;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+.summary-table{
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+}
+
+/* ================= FOOTER ================= */
+.footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:22px;
+font-size:18px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+padding:20px;
+}
+
+.nav-links{
+margin-top:15px;
+}
+
+.nav-links a{
+display:block;
+margin:10px 0;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.hero-btn{
+font-size:18px;
+padding:14px 28px;
+}
+
+.stats{
+gap:25px;
+}
+
+.cards{
+padding:30px 10px;
+}
+
+.section{
+width:95%;
+}
+}

@@ -1,0 +1,19 @@
+# flask
+# pandas
+# numpy
+# scikit-learn
+# xgboost
+# plotly
+# joblib
+# reportlab
+
+
+Flask
+pandas
+numpy
+scikit-learn
+xgboost
+# tensorflow
+plotly
+joblib
+fpdf

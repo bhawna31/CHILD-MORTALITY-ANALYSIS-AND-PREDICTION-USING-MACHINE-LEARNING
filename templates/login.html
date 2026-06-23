@@ -1,0 +1,34 @@
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="container">
+<h2>Login</h2>
+<form method="POST">
+<input name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<button>Login</button>
+
+</form>
+</div> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login | Child Mortality Analysis</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="hero login-hero">
+<div class="login-box">
+<h2>Login</h2>
+<form method="POST">
+<label>Username</label>
+<input name="username" placeholder="Enter Username" required>
+<label>Password</label>
+<input type="password" name="password" placeholder="Enter Password" required>
+<button type="submit">Login</button>
+</form>
+<p class="register-link">New User? <a href="/register">Create Account</a></p>
+</div>
+</div>
+</body>
+</html>

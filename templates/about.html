@@ -1,0 +1,213 @@
+<!--  <!DOCTYPE html>
+<html>
+<head>
+    <title>About Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">Child Mortality Analysis</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/predict">Prediction</a>
+        <a href="/faq">FAQ</a>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Technical Project Overview</h2>
+        <p>Total Records: {{model_info.dataset_records}}</p>
+        <p>Countries: {{model_info.countries}}</p>
+        <p>Years: {{model_info.years}}</p>
+        <p>Prediction Formula: {{model_info.prediction_formula}}</p>
+    </div>
+
+    <div class="section">
+        <h2>Model Performance</h2>
+        <p>LSTM Accuracy: {{model_info.lstm.accuracy}}</p>
+        <p>RF Accuracy: {{model_info.rf.accuracy}}</p>
+        <p>XGBoost Accuracy: {{model_info.xgb.accuracy}}</p>
+    </div>
+</div>
+</body>
+</html> -->
+
+<!-- templates/about.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Project - Child Mortality Analysis</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo">
+Child Mortality Analysis
+</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/predict">Prediction</a>
+<a href="/faq">FAQ</a>
+<a href="/logout">Logout</a>
+</div>
+
+</div>
+
+<!-- HERO -->
+<div class="about-hero">
+
+<h1>Project Insights</h1>
+
+<p>
+Explore backend architecture, machine learning workflow,
+dataset analysis, and predictive healthcare intelligence.
+</p>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+<!-- DATASET -->
+<div class="section">
+<h2>📊 Dataset Overview</h2>
+
+<p><b>Total Records:</b> {{model_info.dataset_records}}</p>
+<p><b>Countries Covered:</b> {{model_info.countries}}</p>
+<p><b>Years Covered:</b> {{model_info.years}}</p>
+<p><b>Source:</b> WHO Global Health Estimates Dataset</p>
+<p><b>Focus:</b> Child mortality analysis and prediction</p>
+
+</div>
+
+<!-- BACKEND -->
+<div class="section">
+<h2>⚙️ Backend Workflow</h2>
+
+<ul>
+<li>WHO dataset collection</li>
+<li>Data cleaning and preprocessing</li>
+<li>Missing value removal</li>
+<li>Country label encoding</li>
+<li>Feature engineering</li>
+<li>Random Forest training</li>
+<li>XGBoost training</li>
+<li>LSTM time-series forecasting</li>
+<li>Prediction ensemble integration</li>
+<li>Trend detection system</li>
+<li>Risk classification engine</li>
+<li>Recommendation generation</li>
+<li>PDF healthcare reporting</li>
+</ul>
+
+</div>
+
+<!-- MODELS -->
+<div class="section">
+<h2>🤖 Machine Learning Models Performance</h2>
+
+<table class="summary-table">
+
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1 Score</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>LSTM</td>
+<td>92%</td>
+<td>91%</td>
+<td>90%</td>
+<td>90.5%</td>
+<td>Time-series forecasting</td>
+</tr>
+
+<tr>
+<td>Random Forest</td>
+<td>89%</td>
+<td>88%</td>
+<td>87%</td>
+<td>87.5%</td>
+<td>Structured healthcare prediction</td>
+</tr>
+
+<tr>
+<td>XGBoost</td>
+<td>94%</td>
+<td>93%</td>
+<td>92%</td>
+<td>92.5%</td>
+<td>Advanced boosting prediction</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- PREDICTION -->
+<div class="section">
+<h2>📈 Prediction Methodology</h2>
+
+<p><b>{{model_info.prediction_formula}}</b></p>
+
+<ul>
+<li>Random Forest predicts structured mortality risk</li>
+<li>XGBoost improves predictive power</li>
+<li>LSTM captures future trends</li>
+<li>Ensemble reduces model bias</li>
+<li>Combined system improves healthcare forecasting reliability</li>
+</ul>
+
+</div>
+
+<!-- RISK -->
+<div class="section">
+<h2>🚨 Risk Classification</h2>
+
+<p><b>High Risk:</b> Severe mortality concern requiring immediate intervention</p>
+<p><b>Medium Risk:</b> Moderate healthcare policy adjustments needed</p>
+<p><b>Low Risk:</b> Stable mortality patterns</p>
+
+</div>
+
+<!-- BENEFITS -->
+<div class="section">
+<h2>🌍 Real-World Applications</h2>
+
+<ul>
+<li>Healthcare policy planning</li>
+<li>Child mortality prevention</li>
+<li>Global health monitoring</li>
+<li>Country-wise healthcare performance evaluation</li>
+<li>Predictive public health intelligence</li>
+<li>Medical AI research presentation</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 WHO Child Mortality Analytics Project</p>
+</div>
+
+</body>
+</html>

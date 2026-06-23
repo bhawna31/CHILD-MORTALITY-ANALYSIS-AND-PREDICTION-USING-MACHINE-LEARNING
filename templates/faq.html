@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <h2>Frequently Asked Questions</h2>
+        <h3>Why use AI models?</h3>
+        <p>To improve mortality forecasting accuracy.</p>
+        <h3>Which models are included?</h3>
+        <p>LSTM, Random Forest, and XGBoost.</p>
+        <h3>Can this be used for healthcare planning?</h3>
+        <p>Yes, predictions support policy simulations and recommendations.</p>
+    </div>
+</div>
+</body>
+</html> -->
+
+<!-- templates/faq.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAQ - Child Mortality Analysis</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo">
+Child Mortality Analysis
+</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/predict">Prediction</a>
+<a href="/about">About</a>
+<a href="/logout">Logout</a>
+</div>
+
+</div>
+
+<!-- HERO -->
+<div class="faq-hero">
+
+<h1>Frequently Asked Questions</h1>
+
+<p>
+Everything you need to understand this healthcare analytics project.
+</p>
+
+</div>
+
+<!-- FAQ CONTENT -->
+<div class="container">
+
+<div class="faq-box">
+<h3>📌 Which dataset is used?</h3>
+<p>WHO Global Health Estimates Dataset covering 194+ countries and multiple years.</p>
+</div>
+
+<div class="faq-box">
+<h3>🤖 Which machine learning models are used?</h3>
+<p>LSTM, Random Forest, and XGBoost.</p>
+</div>
+
+<div class="faq-box">
+<h3>📊 Why combine Random Forest and XGBoost?</h3>
+<p>To improve prediction stability, reduce bias, and increase forecasting accuracy.</p>
+</div>
+
+<div class="faq-box">
+<h3>📈 What is LSTM used for?</h3>
+<p>LSTM handles time-series forecasting and long-term mortality trend prediction.</p>
+</div>
+
+<div class="faq-box">
+<h3>🚨 How is risk classified?</h3>
+<p>Predictions are categorized into High, Medium, and Low risk based on mortality severity.</p>
+</div>
+
+<div class="faq-box">
+<h3>📄 Can reports be downloaded?</h3>
+<p>Yes, PDF prediction reports are generated automatically.</p>
+</div>
+
+<div class="faq-box">
+<h3>🌍 Real-world applications?</h3>
+<p>Healthcare planning, policy development, child mortality prevention, and global health forecasting.</p>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 WHO Child Mortality Analytics Project</p>
+</div>
+
+</body>
+</html>

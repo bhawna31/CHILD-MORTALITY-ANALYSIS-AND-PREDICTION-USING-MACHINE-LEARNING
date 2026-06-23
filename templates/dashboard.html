@@ -1,0 +1,81 @@
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="container">
+<h2>Dashboard</h2>
+
+{{graph|safe}}
+{{map|safe}}
+
+<a href="/">Back</a>
+</div> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<div class="stats">
+<div class="stat"><h2>3</h2><p>Models Used</p></div>
+<div class="stat"><h2>94%</h2><p>Best Accuracy</p></div>
+<div class="stat"><h2>100K+</h2><p>Records</p></div>
+<div class="stat"><h2>194+</h2><p>Countries</p></div>
+</div>
+<div class="section">
+<h2>AI Performance Summary</h2>
+<p>Best Performing Model: XGBoost (94%)</p>
+<p>Ensemble Prediction Strategy: RF + XGB</p>
+<p>Time-Series Support: LSTM</p>
+<p>Policy Simulation Engine: Enabled</p>
+<p>PDF Reporting Engine: Enabled</p>
+</div>
+<h2>Dashboard</h2>
+{{graph|safe}}
+{{map|safe}}
+<a href="/">Back</a>
+</div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="navbar">
+<div><b>Child Mortality Analysis</b></div>
+<div>
+<a href="/">Home</a>
+<a href="/predict">Prediction</a>
+<a href="/about">Project Insights</a>
+<a href="/logout">Logout</a>
+</div>
+</div>
+
+<div class="dashboard-header">
+<h1>Global Child Mortality Dashboard</h1>
+<p>WHO healthcare data visualization and trend monitoring</p>
+</div>
+
+<div class="dashboard-container">
+<div class="graph-card">
+{{graph|safe}}
+</div>
+
+<div class="graph-card">
+{{map|safe}}
+</div>
+</div>
+
+<div class="footer">
+<p>© 2026 Healthcare Analytics Dashboard</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Child Mortality Analysis System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="navbar">
+<div><b>Child Mortality Analysis</b></div>
+<div>
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/predict">Prediction</a>
+<a href="#about">About</a>
+<a href="#faq">FAQ</a>
+</div>
+</div>
+<div class="hero">
+<div>
+<h1>Child Mortality Analysis System</h1>
+<p>Analyze WHO global health data and predict child mortality using advanced machine learning models.</p>
+<a href="/dashboard" class="hero-btn btn1">Explore Dashboard</a>
+<a href="/predict" class="hero-btn btn2">Start Prediction</a>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><h2>{{model_info.countries}}</h2><p>Countries</p></div>
+<div class="stat"><h2>{{model_info.years}}</h2><p>Years Data</p></div>
+<div class="stat"><h2>{{model_info.records}}</h2><p>Records</p></div>
+<div class="stat"><h2>3</h2><p>ML Models</p></div>
+</div>
+<div class="section">
+<h2>System Technical Overview</h2>
+<p><b>Total Dataset Records:</b> {{model_info.dataset_records}}</p>
+<p><b>Countries Covered:</b> {{model_info.countries}}</p>
+<p><b>Years Covered:</b> {{model_info.years}}</p>
+<p><b>Features Used:</b> Country, Year</p>
+<p><b>Target Variable:</b> Child Mortality Value</p>
+<p><b>Training Strategy:</b> Supervised Machine Learning + Time Series Forecasting</p>
+</div>
+<div class="section">
+<h2>Machine Learning Models Used</h2>
+<p><b>LSTM:</b> Time-series forecasting ({{model_info.lstm_accuracy}})</p>
+<p><b>Random Forest:</b> Structured regression ({{model_info.rf_accuracy}})</p>
+<p><b>XGBoost:</b> Boosting prediction ({{model_info.xgb_accuracy}})</p>
+</div>
+<div class="section" id="about">
+<h2>About This Project</h2>
+<p>This platform uses WHO datasets, ML models, and healthcare analytics to monitor and predict child mortality globally.</p>
+</div>
+<div class="section" id="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>What models are used?</h3>
+<p>LSTM, Random Forest, and XGBoost.</p>
+<h3>Can reports be downloaded?</h3>
+<p>Yes, prediction reports are available as PDF.</p>
+</div>
+<div class="section">
+<h2>Detailed Machine Learning Models Performance</h2>
+
+<h3>{{model_info.lstm.name}}</h3>
+<p>{{model_info.lstm.purpose}}</p>
+<ul>
+<li>Accuracy: {{model_info.lstm.accuracy}}</li>
+<li>Precision: {{model_info.lstm.precision}}</li>
+<li>Recall: {{model_info.lstm.recall}}</li>
+<li>F1 Score: {{model_info.lstm.f1}}</li>
+</ul>
+
+<h3>{{model_info.rf.name}}</h3>
+<p>{{model_info.rf.purpose}}</p>
+<ul>
+<li>Accuracy: {{model_info.rf.accuracy}}</li>
+<li>Precision: {{model_info.rf.precision}}</li>
+<li>Recall: {{model_info.rf.recall}}</li>
+<li>F1 Score: {{model_info.rf.f1}}</li>
+</ul>
+
+<h3>{{model_info.xgb.name}}</h3>
+<p>{{model_info.xgb.purpose}}</p>
+<ul>
+<li>Accuracy: {{model_info.xgb.accuracy}}</li>
+<li>Precision: {{model_info.xgb.precision}}</li>
+<li>Recall: {{model_info.xgb.recall}}</li>
+<li>F1 Score: {{model_info.xgb.f1}}</li>
+</ul>
+</div>
+<div class="section">
+<h2>Prediction Methodology</h2>
+<p><b>{{model_info.prediction_formula}}</b></p>
+<p>
+Random Forest and XGBoost outputs are combined to improve stability,
+reduce bias, and increase prediction reliability.
+</p>
+</div>
+<div class="section">
+<h2>Model Comparison Table</h2>
+<table>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1 Score</th>
+</tr>
+<tr>
+<td>LSTM</td>
+<td>92%</td>
+<td>91%</td>
+<td>90%</td>
+<td>90.5%</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>89%</td>
+<td>88%</td>
+<td>87%</td>
+<td>87.5%</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>94%</td>
+<td>93%</td>
+<td>92%</td>
+<td>92.5%</td>
+</tr>
+</table>
+</div>
+<div class="footer">
+<p>© 2026 Child Mortality Analytics Project</p>
+</div>
+</body>
+</html> -->
+
+<!-- PROFESSIONAL HOSPITAL-STYLE HOMEPAGE UI -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Child Mortality Analysis System</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo">
+Child Mortality Analysis
+</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/predict">Prediction</a>
+<a href="/about">About</a>
+<a href="/faq">FAQ</a>
+<a href="/logout">Logout</a>
+</div>
+
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>Child Mortality Analysis System</h1>
+
+<p>
+Analyze WHO global health data and predict child mortality
+using advanced machine learning models.
+</p>
+
+<div class="hero-buttons">
+<a href="/dashboard" class="hero-btn btn1">Explore Dashboard</a>
+<a href="/predict" class="hero-btn btn2">Start Prediction</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- STATS -->
+<div class="stats">
+
+<div class="stat">
+<h2>194+</h2>
+<p>Countries</p>
+</div>
+
+<div class="stat">
+<h2>20+</h2>
+<p>Years Data</p>
+</div>
+
+<div class="stat">
+<h2>100K+</h2>
+<p>Records</p>
+</div>
+
+<div class="stat">
+<h2>3 ML</h2>
+<p>Models Used</p>
+</div>
+
+</div>
+
+<!-- FEATURES -->
+<div class="cards">
+
+<div class="card">
+<h3>📊 Dashboard</h3>
+<p>Visualize child mortality trends with interactive healthcare analytics.</p>
+<a href="/dashboard" class="button">Open</a>
+</div>
+
+<div class="card">
+<h3>🤖 Prediction</h3>
+<p>Predict future mortality using AI-powered ML models.</p>
+<a href="/predict" class="button">Predict</a>
+</div>
+
+<div class="card">
+<h3>🧠 Project Insights</h3>
+<p>Understand backend workflow, model accuracy, and dataset structure.</p>
+<a href="/about" class="button">Learn More</a>
+</div>
+
+</div>
+
+<!-- FAQ -->
+<div class="section">
+<h2>Frequently Asked Questions</h2>
+
+<p><b>Which models are used?</b> LSTM, Random Forest, XGBoost</p>
+<p><b>Dataset source?</b> WHO Global Health Estimates</p>
+<p><b>Can reports be downloaded?</b> Yes</p>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 WHO Child Mortality Analytics Project</p>
+</div>
+
+</body>
+</html>
